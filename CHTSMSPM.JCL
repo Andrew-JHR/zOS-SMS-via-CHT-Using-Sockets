@@ -1,0 +1,8 @@
+//ANDREWJC JOB   CLASS=A,MSGCLASS=X,NOTIFY=&SYSUID               
+//STEP1    EXEC  PGM=CHTSMSPM,
+//   PARM='0937999999SMS TEST MSG FROM ANDREWJ'
+//* First 10 bytes: Cellphone number 
+//* Rest bytes are SMS message content
+//STEPLIB  DD    DISP=SHR,DSN=ANDREWJ.SOURCE.LMD
+//SYSPRINT DD    SYSOUT=*
+//SMS4CHT  DD    SYSOUT=*
